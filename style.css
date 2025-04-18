@@ -1,0 +1,1240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: header;
+    src: url(../fonts/Fragment_Mono/header.ttf);
+}
+@font-face {
+    font-family: caramel;
+    src: url(fonts/CaramelMocacino-MVR6Y.otf);
+}
+
+
+@font-face {
+    font-family: radikal;
+    src: url(fonts/Nootype\ -\ Radikal\ Medium.otf);
+}
+
+@font-face {
+    font-family: para;
+    src: url(../fonts/Inter/para.ttf);
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(../fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: emoji;
+    src: url(../fonts/Noto_Emoji/NotoEmoji-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: gilroy-light;
+    src: url(../fonts/for-clear/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url(../fonts/for-clear/Gilroy-Bold.ttf);
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background:linear-gradient(to bottom,#F2F6D0,#EBEBEB,#d0f0f6,#EBEBEB) ;    padding: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 10px;
+    transform: translateY(20px);
+    animation: fadeInPage1 1.5s ease-out forwards; /* Adjust timing as needed */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInPage1 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header .nav-wrap{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #F2F6D0;
+    align-items: center;
+    gap: 2vw;
+    
+}
+
+header{
+    border-bottom: solid rgba(128, 128, 128,0.1) 1px;
+   
+}
+
+h2{
+   font-size: 3vw;
+    font-family: caramel;
+    color: #112A46;
+}
+
+.lists {
+    display: flex;
+
+    position: relative;
+    justify-content: space-around;
+   
+    gap: 2vw;
+    
+}
+
+.lists a{
+    text-decoration-line: none;
+  position: relative;
+  transition: 0.7s;
+    /* gap: 10vw; */
+}
+
+.lists a:hover {
+    transform: scale(1.1);
+}
+
+
+.red-nav{
+    color: tomato;
+}
+
+.nav-wrap .drop-down{
+    
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+}
+
+.lists a{
+    font-family: caramel;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+/* Button Styling */
+.signup{
+    text-align: center;
+    background-color: #ff7f50; /* Button color */
+    color: white; /* Text color */
+    font-size: 15px; /* Font size */
+    padding: 4px 20px; /* Vertical and horizontal padding */
+    padding-right: 30px ;
+    /* font-family: ; */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, transform 0.7s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.signup:hover {
+    background-color: #ff5722; /* Darker shade of the button color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus Effect (for accessibility) */
+.signup:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.6); /* Highlight on focus */
+}
+
+/* making nav-bar responsive */
+
+@media (max-width: 768px) {
+    .lists {
+       display: flex;
+       /* align-items: center; */
+       flex-direction: column;
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.5);
+       width: 200px;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+       top: 80px;
+       border-radius: 12px;
+       right: 0;
+       /* justify-content: center; */
+       padding-top: 16px;
+       padding-bottom: 14px;
+    }
+    
+    .lists a{
+        left: 20px;
+    }
+
+    .lists .signup{
+        text-align: center;
+        background-color: #f0f3bd;
+        border-radius: 24px;
+        width: fit-content;
+        padding: 5px 10px;
+        left: 25%;
+    }
+   .nav-wrap{
+    gap: 50vw;
+   }
+
+.nav-wrap .drop-down{
+    display: block;
+    background-color: #fff;
+}
+}
+
+span{
+    font-family: emoji;
+}
+/* css for nav ends here hai */
+
+/* css for centre starts here  */
+
+.center-main{
+    display: flex;
+    height: calc(100vh - 100px);
+    
+    width: 100vw;
+    /* padding-top: 3vh; */
+    /* background-color: #F2F6D0; */
+}
+.hero-left{
+    width: 55vw;
+    /* background-color: #fff; */
+    padding: 1vw 2vw 0 5vw;
+}
+
+.center-main .hero-right {
+    width: 45vw;
+    /* background-color: #F2F6D0; */
+    display: flex;
+}
+
+.center-main .hero-left h1 {
+    font-size: 7vw;
+    color: #5f97dce9;
+    font-family: gilroy-bold;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+
+.center-main .hero-left span{
+    font-family: caramel;
+    color: hsl(120, 100%, 25%)    ;
+    letter-spacing: 4%;
+    font-size: 17vh;
+    
+}
+
+/* Button Styling */
+.center-main .hero-left button {
+    background-color: #ff7f50; /* Button color */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    padding: 12px 30px; /* Vertical and horizontal padding */
+    border: none; /* Remove default border */
+    font-family: radikal;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.center-main .hero-left button:hover {
+    background-color: #ff5722; /* Darker shade of the button color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus Effect (for accessibility) */
+.center-main .hero-left button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.6); /* Highlight on focus */
+}
+
+
+
+.center-main .hero-right .dog {
+    position: absolute;
+    height: 21vh;
+    width: 10vw;
+    z-index: 1;
+    animation: updown-dog 3s reverse ease-in-out infinite;
+}
+
+@keyframes updown-dog {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.center-main .hero-right .unicorn {
+    position: absolute;
+    height: 25vh;
+    width: 14vw;
+    z-index: 1;
+    animation: updown-unicorn 3.1s ease-in-out infinite;
+    /* padding: 10vw; */
+    margin: 56vh;
+}
+
+@keyframes updown-unicorn {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.center-main .hero-right .cat {
+    height: calc(108% - 100px);
+    
+    animation: updown-cat 3s reverse ease-in-out infinite;
+    /* Animation properties */
+    margin-right: 2vw;
+    /* overflow: hidden; */
+}
+
+/* Keyframes for up and down animation */
+@keyframes updown-cat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Move up by 10px */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* 1st main end  */
+
+/* 2nd main start  */
+
+.second-main{
+    display: flex;
+    height: 105vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* /* background-color: ; */
+} 
+
+.second-main .second-right{
+ 
+    height: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 41vw;
+
+}
+
+.second-main .second-left{
+    height: inherit;
+    position: relative;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    
+    justify-content: center;
+}
+
+.second-main .second-left img{
+    height: 80%;
+    border-radius: 50%;
+    border: 20px solid rgba(255, 255, 255,0.3);
+    box-shadow: rgba(26, 24, 24,0.9);
+}
+
+.second-main .second-right h1{
+    font-family: radikal;
+    font-size: 6vw;
+}
+
+.second-main .second-right p{
+    font-family: gilroy-light;
+    font-size: 30px;
+    font-weight: 550;
+    color: #1c3554;
+    padding-left: 20px;
+    line-height: 5vh;
+    text-align: justify;
+    width: 38vw;
+}
+.second-main .second-right button {
+    background-color: #ff7f50; /* Button color */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    padding: 12px 30px; /* Vertical and horizontal padding */
+    border: none; /* Remove default border */
+    font-family: radikal;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    width: max-content;
+    border-radius: 30px;
+    margin: 50px 25px;
+    transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.second-main .second-right button:hover {
+    background-color: #ff5722; /* Darker shade of the button color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus Effect (for accessibility) */
+.second-main .second-right button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.6); /* Highlight on focus */
+}
+/* 2nd main end  */
+
+/* 3rd main start  */
+/* Main Section Styling */
+.third-main {
+    padding: 50px 20px;
+    /* background-color: #f6dad0; Light peach background to match previous theme */
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.third-main .third-service h1 {
+    font-size: 5vw;
+    /* font-weight: 700; */
+    color: #333;
+    font-family: radikal;
+    margin-bottom: 20px;
+    /* background-color: black; */
+}
+
+/* Flexbox Layout for Cards */
+.third-main-inner .third-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the cards */
+    flex-wrap: wrap; /* Allow cards to wrap to next row on smaller screens */
+    gap: 30px; /* Space between cards */
+    justify-content: center;
+    /* background-color: black; */
+}
+
+/* Styling for Each Card */
+.third-main .third-main-inner .third-wrapper .third-show-card {
+    background: linear-gradient(to right,white,rgba(255, 192, 203, 0.2));
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for each card */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+.third-main .third-main-inner{
+    background-color: hsla(0, 0%, 100%,30%);
+    width: 1200px ;
+    padding: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 30px;
+}
+
+/* Image Styling */
+.third-main .third-main-inner .third-wrapper .third-show-card .third-imges img {
+    width: 100%;
+    height: 200px;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Border between image and text */
+}
+
+/* Card Text and Button Styling */
+.third-img-description {
+    padding: 20px;
+}
+
+.third-img-description h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: header;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.third-img-description p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.third-img-description button {
+    background-color: #ff5e57; /* Modern coral color */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s ease; /* Button hover effect */
+}
+
+/* Button Hover Effect */
+.third-img-description button:hover {
+    background-color: #e04e3d; /* Darker coral */
+    transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+/* Hover Effect on Cards */
+.third-show-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .third-wrapper {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+        align-items: center;
+    }
+}
+
+
+/* Button Hover Effect */
+.third-main .third-show-card .third-img-description button:hover {
+    background-color: #ff5722; /* Darker shade of the button color */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Focus Effect (for accessibility) */
+.third-main .third-show-card .third-img-description button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.6); /* Highlight on focus */
+}
+
+.third-main .third-show-card .third-img-description h3{
+    font-family: para;
+    font-size: 2.7vh;
+    color: #112A46;
+}
+.third-main .third-show-card .third-img-description p{
+    font-family: para;
+    color: black;
+    font-size: 2.2vh;
+    font-weight: 450;
+}
+
+
+/* Fourth Main Section Styling */
+
+.fourth-main {
+    padding: 50px 20px;
+    /* background-color: #f6dad0;  */
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.fourth-main .fourth-service h1 {
+    font-size: 5vw;
+    /* font-weight: 700; */
+    color: #333;
+    font-family: radikal;
+    margin-bottom: 20px;
+    /* background-color: black; */
+}
+
+/* Flexbox Layout for Cards */
+.fourth-main-inner .fourth-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the cards */
+    flex-wrap: nowrap; /* Allow cards to wrap to next row on smaller screens */
+    gap: 30px; /* Space between cards */
+    justify-content: center;
+    /* background-color: black; */
+    height: 65vh;
+    align-items: center;
+
+}
+
+
+/* Styling for Each Card */
+.fourth-wrapper .fourth-show-card {
+    background: linear-gradient(to right,white,rgba(255, 192, 203, 0.2));
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for each card */
+    overflow: hidden;
+    height: fit-content;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+.fourth-main .fourth-main-inner{
+    background-color: hsla(0, 0%, 100%,30%);
+    width: 1200px ;
+    padding: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 30px;
+    
+}
+
+/* Image Styling */
+.fourth-main .fourth-main-inner .fourth-wrapper .fourth-show-card .fourth-imges {
+    width: 100%;
+    height: 80% ; /* Adjust the height as needed */
+    background-color: black;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.fourth-main .fourth-main-inner .fourth-wrapper .fourth-show-card .fourth-imges img {
+    width: 100%;
+    /* height: 40%; */
+    max-height: 270px;
+        
+    object-fit: cover; /* Ensures the entire image is visible */
+    border-bottom: 2px solid #ddd; /* Border between image and text */
+}
+
+
+/* Card Text and Button Styling */
+.fourth-img-description {
+    padding: 20px;
+    /* display: none; */
+}
+
+.fourth-img-description h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: header;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fourth-img-description p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+/* Hover Effect on Cards */
+.fourth-show-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .fourth-wrapper {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+        align-items: center;
+    }
+}
+
+
+
+
+.fourth-main .fourth-show-card .fourth-img-description h3{
+    font-family: para;
+    font-size: 2.7vh;
+    color: #112A46;
+}
+.fourth-main .fourth-show-card .fourth-img-description p{
+    font-family: para;
+    color: black;
+    font-size: 2.2vh;
+    font-weight: 450;
+}
+
+
+/* fourth-main-inner {
+    background-color: hsla(0, 0%, 100%, 30%);
+    width: 90%;
+    padding: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.fourth-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.fourth-show-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fourth-show-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fourth-imges {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.fourth-imges img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fourth-img-description {
+    padding: 15px;
+    text-align: center;
+}
+
+.fourth-img-description h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.fourth-img-description p {
+    font-size: 14px;
+    color: #777;
+} */
+/*fourth main end*/
+
+/* General reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+} */
+
+/* Main Wrapper */
+.main-wrapper {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    
+}
+.main-wrapper-adopt {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    animation: fadeIn 1s ease-in-out;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    
+}
+
+.main-wrapper .discount-div{
+    margin: 10px;
+    height: 120px;
+    width: 80%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    border-radius: 30px;
+    background-color: #f0f3bd4a;
+    /* border:  1px rgba(255, 211, 211, 0.781); */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Product Grid */
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+    margin: 20 5 20 5 ;
+    padding: 20px;
+    max-width: 95vw;
+    width: 100%;
+    border-radius: 28px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #fbe8e8b6;
+    border-radius: 24px;
+    /* background:linear-gradient(to right,rgba(170, 162, 162,0.1),rgba(152, 30, 30,0.3)) ; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: min-content;
+    width: fit-content;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn_cards 0.8s ease-in-out forwards;
+    /* position: absolute; */
+}
+/* product hover effect */
+.product-card:hover{
+    transform: scale(1.5);
+    
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn_cards {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.product-card:nth-child(1) {
+animation-delay: 0.2s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.product-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.product-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.product-card:nth-child(5) {
+    animation-delay: 1s;
+}
+.product-card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.product-card:nth-child(7) {
+    animation-delay: 1.4s;
+}
+.product-card:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.product-card:nth-child(9) {
+    animation-delay: 1.8s;
+}
+.product-card:nth-child(10) {
+    animation-delay: 2s;
+}
+.product-card:nth-child(11) {
+    animation-delay: 2.2s;
+}
+.product-card:nth-child(12) {
+    animation-delay: 2.4s;
+}
+.product-card:nth-child(13) {
+    animation-delay: 2.6s;
+}
+.product-card:nth-child(14) {
+    animation-delay: 2.8s;
+}
+.product-card:nth-child(15) {
+    animation-delay: 3s;
+}
+.product-card:nth-child(16) {
+    animation-delay: 3.2s;
+}
+.product-card:nth-child(17) {
+    animation-delay: 3.4s;
+}
+.product-card:nth-child(18) {
+    animation-delay: 3.6s;
+}
+.product-card:nth-child(19) {
+    animation-delay: 3.8s;
+}
+.product-card:nth-child(20) {
+    animation-delay: 4s;
+}
+
+.image-box {
+    background-color: rgba(223, 115, 115, 0.1);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 6px;
+}
+
+.info-box {
+    margin-top: 10px;
+    max-height: fit-content;
+}
+
+.info-box h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-box .price {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background:linear-gradient(to top ,hsla(265, 32%, 62%, 0.515),#ebebeb);
+    color: black;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-top:1px solid pink;
+}
+
+.footer-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1 1 200px; /* Flexible width with a minimum of 200px */
+    margin-right: 20px;
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #ff7f50;
+    font-family: gilroy-bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-family: gilroy-bold;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: rgba(251, 72, 41, 0.782);
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    padding: 10px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: #ff5722;
+}
+
+/* Legal Info */
+.footer-legal {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid hsla(0, 0%, 27%,10%);
+    padding-top: 10px;
+    color: #8a1c1c;
+}
+
+.footer-legal a {
+    color: #010101;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
+.body-adopt{
+    background:linear-gradient(to bottom,#F2F6D0,#d0e6f6,#f6dbd0);
+
+
+}
+
+/* faq */
+
+/* General Page Styling */
+.faq-page {
+    padding: 50px;
+
+    background-color: #f6dad0; /* Light peach background */
+    font-family: 'Arial', sans-serif;
+    max-width: 70vw;
+    border-radius: 16px;
+    margin: 20px auto;
+    color: #333;
+}
+
+/* Header Styling */
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* FAQ Container */
+.faq-container {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #eee;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* FAQ Question */
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f8e1d6;
+}
+
+/* FAQ Toggle Icon */
+.faq-toggle {
+    font-size: 24px;
+    color: #ff5e57; /* Coral color for toggle */
+    transition: transform 0.3s ease;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Open FAQ Styling */
+.faq-item.open .faq-answer {
+    max-height: 100px; /* Adjust based on content */
+}
+
+.faq-item.open .faq-toggle {
+    transform: rotate(45deg); /* Change + to x */
+}
+
+
+.filter-aside {
+    background-color: #f6dad0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-aside h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.filter-toggle {
+    width: 100%;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.filter-toggle:hover {
+    background-color: #e65b54;
+}
+
+.filter-options {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-options label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.filter-options select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.filter-options select:focus {
+    border-color: #ff6f61;
+}
+
+.filter-options button {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter-options button:hover {
+    background-color: #e65b54;
+}
+
+
+

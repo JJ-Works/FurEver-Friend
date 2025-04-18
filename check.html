@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="filter-aside">
+        <h2>Filter</h2>
+        <button class="filter-toggle">Show Filters</button>
+        <div class="filter-options">
+            <!-- Breed Dropdown -->
+            <label for="breed">Breed</label>
+            <select id="breed" name="breed">
+                <option value="">Select Breed</option>
+                <option value="labrador">Labrador</option>
+                <option value="beagle">Beagle</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="poodle">Poodle</option>
+            </select>
+    
+            <!-- Age Dropdown -->
+            <label for="age">Age</label>
+            <select id="age" name="age">
+                <option value="">Select Age</option>
+                <option value="puppy">Puppy</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select>
+    
+            <!-- Gender Dropdown -->
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    
+            <!-- Color Dropdown -->
+            <label for="color">Color</label>
+            <select id="color" name="color">
+                <option value="">Select Color</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="white">White</option>
+                <option value="golden">Golden</option>
+            </select>
+    
+            <!-- Size Dropdown -->
+            <label for="size">Size</label>
+            <select id="size" name="size">
+                <option value="">Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+    
+            <button type="submit">Apply Filters</button>
+        </div>
+    </aside>
+    
+
+    <script>
+        document.querySelector('.filter-toggle').addEventListener('click', () => {
+    const filterOptions = document.querySelector('.filter-options');
+    filterOptions.style.display = filterOptions.style.display === 'none' || !filterOptions.style.display
+        ? 'flex'
+        : 'none';
+});
+
+    </script>
+</body>
+</html>
