@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 @font-face {
   font-family: caramel;
   src: url(fonts/CaramelMocacino-MVR6Y.otf);
@@ -93,10 +92,14 @@ h2 {
 .lists a {
   text-decoration: none;
   position: relative;
-  transition: 0.7s;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), color 0.3s;
   font-family: caramel;
   font-size: 1.3em;
   font-weight: 100;
+  display: inline-block;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-origin: center;
 }
 
 .lists a:hover {
@@ -416,6 +419,7 @@ span {
   width: 20em;
   height: 30em;
   overflow: hidden;
+  padding: 1.4em;
   padding: 1.4em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1041,4 +1045,157 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Signup/Login Form Styles */
+.main-wrapper-signup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(120deg, #f6dad0 0%, #d0e6f6 100%);
+}
+
+.main-title-login{
+  margin-bottom: 2em;
+  font-family: radikal;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.second-wrapper-signup {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 36px 32px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-self: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.form-signup label {
+  font-family: caramel, Arial, sans-serif;
+  letter-spacing: 0.1em;
+  color: #333;
+  margin-bottom: 6px;
+  font-size: 1.2em;
+  font-weight: 50;
+}
+
+.form-signup input[type="text"],
+.form-signup input[type="email"] {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-top: 4px;
+  transition: border-color 0.3s;
+  
+}
+
+.signup-textbox{
+  width: 100%;
+}
+
+.form-signup input[type="text"]:focus,
+.form-signup input[type="email"]:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.buttons-signup {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.buttons-signup button {
+  flex: 1;
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 0;
+  font-family: radikal, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin: 0 2px;
+}
+
+.buttons-signup button:last-child {
+  background: #fff;
+  color: #ff7f50;
+  border: 2px solid #ff7f50;
+}
+
+.buttons-signup button:hover {
+  background: #ff5722;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.buttons-signup button:last-child:hover {
+  background: #fff5f2;
+  color: #ff5722;
+}
+
+.links-signup {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.logo-links {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f6dad0;
+  padding: 4px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255,127,80,0.08);
+}
+
+.logo-links:hover {
+  box-shadow: 0 4px 16px rgba(255,127,80,0.18);
+  transform: scale(1.08);
+}
+
+.home-logo{
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(255,127,80,0.08);
+  background-color: #fff;
+  transition: 0.2s, transform 0.2s;
+
+}
+
+.home-logo i{
+  font-size: 2em;
+
+}
+
+.home-logo:hover {
+  box-shadow: 0 4px 16px rgba(255,127,80,0.18);
+  
+  background-color: #f1f5d2;
 }

@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="main-wrapper-signup">
+        <h1 class="main-title-login">Login or Create Account</h1>
+        <div class="second-wrapper-signup">
+            <form action="" class="form-signup">
+                <div class="name-signup">
+                    <label for="nameText">Name</label>
+                    <br><input type="text" name="nameText" class="signup-textbox">
+                </div>
+                <div class="phone">
+                    <label for="phoneText">Phone</label>
+                    <br><input type="text" name="phoneText" class="signup-textbox">
+                </div>
+                <div class="email">
+                        <label for="emailText">Email</label>
+                        <br><input type="email" name="emailText" id="emailText" class="signup-textbox">
+                </div>
+                <div class="buttons-signup">
+                    <button for="submit">Sign Up</button>
+                    <button for="submit">Login</button>
+                </div>
+                <div class="links-signup">
+                    <a href="#" class="google">
+                        <img src="./Images/logo/google.png" class="logo-links" alt="">
+                    </a>
+                    <a href="#" class="facebook">
+                        <img src="./Images/logo/facebook.png" class="logo-links" alt="">
+                    </a>
+                    <a href="#" class="apple">
+                        <img src="./Images/logo/apple.png" class="logo-links" alt="">
+                    </a>
+
+                </div>
+            </form>
+        </div>
+        <a href="index.html" class="home-logo"><i class="ri-home-7-fill"></i></a>
+    </div>
 </body>
 </html>
