@@ -24,4 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Optional: Hide login button after successful login (if not using form submit)
   // loginBtn.addEventListener("click", function () { ... });
-});
+
+  const hamburger = document.querySelector('.drop-down');
+  const navLinks = document.querySelector('.lists');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('nav-active');
+    });
+  }
+}); 
